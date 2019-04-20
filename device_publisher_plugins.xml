@@ -1,0 +1,8 @@
+<library path="lib/libros_node_transformation_device_publisher_plugins">
+  <class name="device_publishers/ImuPublisher" type="device::publisher::ImuPublisher" base_class_type="device::publisher::BasePublisher">
+    <description>Device publisher for an IMU device.</description>
+  </class>
+  <class name="device_publishers/RangePublisher" type="device::publisher::RangePublisher" base_class_type="device::publisher::BasePublisher">
+    <description>Device publisher for a Range device.</description>
+  </class>
+</library>

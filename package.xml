@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_node_transformation</name>
+  <version>0.0.0</version>
+  <description>The ros_node_transformation package</description>
+
+  <author email="nlamprian@gmail.com">Nick Lamprianidis</author>
+  <maintainer email="nlamprian@gmail.com">Nick Lamprianidis</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>serial</build_depend>
+  <build_depend>ros_node_configuration</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>pluginlib</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <build_export_depend>diagnostic_updater</build_export_depend>
+  <build_export_depend>serial</build_export_depend>
+  <build_export_depend>ros_node_configuration</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+  <exec_depend>serial</exec_depend>
+  <exec_depend>ros_node_configuration</exec_depend>
+
+  <export>
+    <ros_node_transformation plugin="${prefix}/device_publisher_plugins.xml" />
+  </export>
+</package>

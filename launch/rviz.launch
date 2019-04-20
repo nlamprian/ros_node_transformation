@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load robot description -->
+  <param name="robot_description" command="xacro --inorder '$(find ros_node_transformation)/urdf/robot.xacro'" />
+
+  <!-- Start robot state publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- Start rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_node_transformation)/rviz/robot.rviz" />
+</launch>

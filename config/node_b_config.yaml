@@ -1,0 +1,28 @@
+devices:
+  names: [sonar_front, sonar_rear]
+  sonar_front:
+    type: serial
+    port: ~/dev/ttySonarFront
+    publish_rate: 20
+    hardware_id: sonar_front
+    diagnostic_period: 1.0
+    publisher:
+      type: device_publishers/RangePublisher
+      topic_name: sonar_front
+      frame_id: front_sonar_link
+      radiation_type: 0
+      field_of_view: 0.1
+      limits: [0.01, 2.0]
+  sonar_rear:
+    type: serial
+    port: ~/dev/ttySonarRear
+    publish_rate: 20
+    hardware_id: sonar_rear
+    diagnostic_period: 1.0
+    publisher:
+      type: device_publishers/RangePublisher
+      topic_name: sonar_rear
+      frame_id: rear_sonar_link
+      radiation_type: 0
+      field_of_view: 0.1
+      limits: [0.01, 2.0]
